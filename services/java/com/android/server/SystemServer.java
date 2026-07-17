@@ -1458,6 +1458,12 @@ public final class SystemServer implements Dumpable {
         t.traceBegin("StartSensorService");
         mSystemServiceManager.startService(SensorService.class);
         t.traceEnd();
+
+        t.traceBegin("StartGmsManagerService");
+        mSystemServiceManager.startService(
+                ink.kaleidoscope.server.GmsManagerService.class);
+        t.traceEnd();
+
         t.traceEnd(); // startBootstrapServices
     }
 
