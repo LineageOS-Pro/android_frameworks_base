@@ -11807,6 +11807,12 @@ public final class Settings {
         public static final String FACE_UNLOCK_DIVERSITY_REQUIRED =
                 "face_unlock_diversity_required";
 
+        /**
+         * Control whether GMS is enabled for this user.
+         * @hide
+         */
+        public static final String GMS_ENABLED = "gms_enabled";
+
 
         /**
          * Whether or not face unlock is allowed for apps (through BiometricPrompt).
